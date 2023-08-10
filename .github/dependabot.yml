@@ -26,9 +26,9 @@ updates:
       # For all packages, ignore all patch updates
       #- dependency-name: "*"
       #  update-types: ["version-update:semver-patch"]
-    labels:
-      - "nuget update dependabot"
-      - "dependencies"
+    #labels:
+     # - "nuget update dependabot"
+     # - "dependencies"
   
   # Configuration for npm
   - package-ecosystem: "npm" 
@@ -37,7 +37,7 @@ updates:
       interval: "daily"
     target-branch: "ci_npm_upgrade_master"
     # Labels on pull requests for version updates only
-    labels:
-      - "npm update dependabot"
-      - "dependencies"
+   # labels:
+   #   - "npm update dependabot"
+   #   - "dependencies"
     open-pull-requests-limit: 50
